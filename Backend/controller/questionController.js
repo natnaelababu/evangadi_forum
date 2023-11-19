@@ -60,7 +60,7 @@ const postQuestions = async (req, res) => {
 		// Check if a question with the same title and description already exists
 		const [existingQuestion] = await dbConnection.query(
 			"SELECT title, description FROM questions WHERE title = ? AND description = ?",
-			[title, description]
+			[title, description] //sql injection
 		);
 
 		// If a similar question exists, return a 409 conflict response

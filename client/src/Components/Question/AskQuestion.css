@@ -8,29 +8,29 @@
 .askQuestion ul li {
 	margin: 10px 0;
 }
-.question_title{
+.question_title {
 	/* padding: 15px 25px;
 	border-radius: 15px;
 	font-size: 1.2rem;
 	border: silver 1px solid; */
-    
-    -webkit-appearance: none;
-    appearance: none;
-    background-clip: padding-box;
-    background-color: #fff;
-    border: 1px solid #ced4da;
-    border-radius: 0.375rem;
-    color: #212529;
-    display: block;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    padding: 0.375rem 0.75rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    width: 100%;
+
+	-webkit-appearance: none;
+	appearance: none;
+	background-clip: padding-box;
+	background-color: #fff;
+	border: 1px solid #ced4da;
+	border-radius: 0.375rem;
+	color: #212529;
+	display: block;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	padding: 0.375rem 0.75rem;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	width: 100%;
 }
 
-.question_title:focus{
+.question_title:focus {
 	outline: none;
 }
 
@@ -68,7 +68,7 @@
 .question_post_btn:hover {
 	background-color: #fe8402;
 }
-.question_post_btn:active{
+.question_post_btn:active {
 	background-color: #516cf0;
 }
 .blue {
@@ -77,6 +77,7 @@
 .askQuestion input {
 	height: 50px;
 }
-.textt{
+.textt {
 	padding-top: 0px;
 }
+

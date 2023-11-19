@@ -49,3 +49,7 @@
     width:90px;
     text-align: center;
 }
+.ArrowIcon {
+	position: absolute;
+	right: 20%;
+}

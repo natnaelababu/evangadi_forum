@@ -4,6 +4,7 @@ import { stateValue } from "../Context/context";
 import axios from "../axios";
 import { Link, useNavigate } from "react-router-dom";
 import img from "../Images/profile.png";
+import { MdArrowForwardIos } from "react-icons/md";
 
 function AllQuestions() {
 	let { username, setusername } = useContext(stateValue);
@@ -112,8 +113,8 @@ function AllQuestions() {
 							</div>
 
 							<h4>{singleQuestion?.title}</h4>
+							<MdArrowForwardIos className="ArrowIcon" />
 						</div>
-						
 					);
 					
 					return theQuestion;

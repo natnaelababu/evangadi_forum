@@ -5,7 +5,18 @@ const express = require("express");
 const app = express();
 const port = 8000;
 const cors = require("cors");
+const rateLimit = require("express-rate-limit");
+const helmet = require("helmet");
 
+app.use(cors());
+
+app.use(
+	rateLimit({
+		windowMs: 5 * 60 * 1000, //5 minutes
+		max: 100, //limit each Ip to 100 requests for windows
+	})
+);
+app.use(helmet());
 //db connection
 const dbConnection = require("./db/dbConfig");
 
@@ -22,8 +33,6 @@ const authMiddleware = require("./middleware/authMiddleware");
 
 //json middleware to extract json data
 app.use(express.json());
-
-app.use(cors());
 
 //user routes middleware
 app.use("/api/users", userRoutes);
