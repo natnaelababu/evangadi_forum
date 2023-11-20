@@ -5,10 +5,10 @@ import { stateValue } from "../Context/context";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 
-import Form from "react-bootstrap/Form";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
+// import Form from "react-bootstrap/Form";
+// import Row from "react-bootstrap/Row";
+// import Col from "react-bootstrap/Col";
+// import Button from "react-bootstrap/Button";
 
 function RegisterAndLogin() {
 	const navigate = useNavigate();
@@ -41,7 +41,7 @@ function RegisterAndLogin() {
 			username: userName,
 			password: password,
 		};
-		fetch("http://localhost:8000/api/users/register", {
+		fetch("https://www.evangadiforum.backend.naty12.com/api/users/register", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
@@ -69,7 +69,7 @@ function RegisterAndLogin() {
 			email: loginEmail,
 			password: loginPassword,
 		};
-		fetch("http://localhost:8000/api/users/login", {
+		fetch("https://www.evangadiforum.backend.naty12.com/api/users/login", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
